@@ -1,7 +1,8 @@
 /*
-1st Refactoring
-2nd Refactoring
-3rd Refactoring
+1st Refactoring 特性に応じてCSSを分離する
+2nd Refactoring HTMLとスタイリングが疎結合である
+3rd Refactoring 影響範囲がみだりに広すぎない
+4th Refactoring 特定のコンテキストにみだりに依存しない
 */
 
 /* ======== ベース ======== */
@@ -19,39 +20,39 @@ body {
 }
 
 /* ======== モジュール ======== */
-#main .bl_module.main-module .body > span {
+.bl_module.main-module .body > span {
     color: #555;
     font-size: 14px;
 }
 
-#main div.bl_module.main-module {
+.bl_module.main-module {
     display: flex;
     align-items: center;
     font-size: 16px;
     line-height: 1.5;
 }
 
-#main div.bl_module.main-module .image-wrapper {
+.bl_module.main-module .image-wrapper {
     flex: 1 1 25%;
     margin-right: 3.33333%;
 }
 
-#main div.bl_module.main-module .image-wrapper img {
+.bl_module.main-module .image-wrapper img {
     width: 100%;
     vertical-align: top;
 }
 
-#main div.bl_module.main-module .body {
+.bl_module.main-module .body {
     flex: 1 1 68.33333%;
 }
 
-#main div.bl_module.main-module .title {
+.bl_module.main-module .title {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
 }
 
-#main div.bl_module.main-module .sub-title {
+.bl_module.main-module .sub-title {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
