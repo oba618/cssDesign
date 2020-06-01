@@ -6,6 +6,7 @@
 5th Refactoring 詳細度がみだりに高くない
 6th Refactoring クラス名から影響範囲が想像できる
 7th Refactoring クラス名から見た目・機能・役割が想像できる
+8th Refactoring 拡張しやすい
 */
 
 /* ======== ベース ======== */
@@ -33,6 +34,19 @@ body {
     align-items: center;
     font-size: 16px;
     line-height: 1.5;
+}
+
+.bl_media__rev {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.bl_media_imageWrapper__rec {
+    margin-right: 0;
+}
+
+.bl_media_body__rev {
+    margin-right: 3.33333%;
 }
 
 .bl_media_imageWrapper {
